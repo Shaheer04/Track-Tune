@@ -62,6 +62,3 @@ if uploaded_file is not None:
         with button_col:
             container = st.container(border=True)
             container.write(genre_name)
-
-if __name__ == '__main__':
-    st.set_option('server.enableCORS', True) 
