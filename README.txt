@@ -20,12 +20,14 @@ genre_mapping = {
     7: 'reggae',
     8: 'disco',
     9: 'country'
-}```
+}
+```
 
 ### Similar Song Recommendations: Based on the predicted genre, the app suggests five songs from the dataset that share a similar style, potentially introducing users to new favorites with a familiar feel.
 
 ## How to Use
-Upload Your Music: Once deployed, navigate to the app's URL in your web browser. You'll find a user interface where you can browse and select a music file to upload.
+Upload Your Music: We created a webapp for this project, where you can easily uploadyour music files.
+https://tracktune.azurewebsites.net/
 
 ## Get Results: The app processes the uploaded audio, predicts the genre, and presents you with the result. Additionally, it suggests five similar songs from the dataset based on the predicted genre.
 
