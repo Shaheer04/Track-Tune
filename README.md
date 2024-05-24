@@ -1,5 +1,12 @@
 # Track Tune
-This project implements a web application built with Python, Streamlit, and deployed on Azure Web Services. It allows users to upload music files and receive genre classification along with recommendations for similar songs.
+This project implements a web application built with Python, Streamlit, Librosa, sckikitlearn and is deployed on Azure Web Services. It allows users to upload music files and receive genre classification along with recommendations for similar songs.
+
+##Link to Presentation deck
+Please visit the following link for presentation deck:
+
+## Azure Web Services
+We have utilized Microsoft's Azure Web services to host our project. This streamlined the workload by making it easier for the changes to be deployed while the code is being experimented upon. You can visit the following link to get to the Track Tune app:
+https://tracktune.azurewebsites.net/ 
 
 ## Problem Statement
 Music lovers often struggle to discover new songs with similar vibes to their favorites. Traditional music streaming services might not provide detailed genre breakdowns or personalized recommendations that capture the essence of a particular song.
@@ -22,14 +29,15 @@ genre_mapping = {
     9: 'country'
 }
 ```
-
-### Similar Song Recommendations: Based on the predicted genre, the app suggests five songs from the dataset that share a similar style, potentially introducing users to new favorites with a familiar feel.
+### Similar Song Recommendations
+Based on the predicted genre, the app suggests five songs from the dataset that share a similar style, potentially introducing users to new favorites with a familiar feel.
 
 ## How to Use
 Upload Your Music: We created a webapp for this project, where you can easily uploadyour music files.
 https://tracktune.azurewebsites.net/
 
-## Get Results: The app processes the uploaded audio, predicts the genre, and presents you with the result. Additionally, it suggests five similar songs from the dataset based on the predicted genre.
+## Get Results
+The app processes the uploaded audio, predicts the genre, and presents you with the result. Additionally, it suggests five similar songs from the dataset based on the predicted genre.
 
 ## Running the App Locally (Optional)
 Install Dependencies: Create a virtual environment and install the required dependencies using:
@@ -38,17 +46,14 @@ Navigate to the project directory in your terminal and execute:
 ```streamlit run .py```
 This will launch the app on your local machine (usually at http://localhost:8501 by default).
 
-## Dependencies:
+## Dependencies
 Python (tested with version 3.12)
 Streamlit (tested with version 1.25.0): Refer to https://docs.streamlit.io/ for the latest version.
 librosa (tested with version 0.11.0): Refer to https://github.com/librosa/librosa for the latest version.
 numpy (tested with version 1.24.3): Refer to https://numpy.org/ for the latest version.
 pandas (tested with version 1.5.3): Refer to https://pandas.pydata.org/ for the latest version.
 scikit-learn (tested with version 1.2.2): Refer to https://scikit-learn.org/ for the latest version.
-
-## Contributing
-We welcome contributions to this project! Feel free to fork the repository, make changes, and submit pull requests. Please ensure your contributions adhere to coding style guidelines and include proper documentation.
-
+  
 ## Next Steps
 Enhance the recommendation engine by incorporating additional factors like tempo, mood, and artist information.
 Expand the dataset to encompass a broader range of genres and musical styles.
