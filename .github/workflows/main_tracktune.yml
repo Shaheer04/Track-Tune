@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - MusicRecommendationSystem
+name: Build and deploy Python app to Azure Web App - TrackTune
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v1
         with:
-          python-version: '3.8'
+          python-version: '3.12'
 
       - name: Create and start virtual environment
         run: |
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_24A3E0F186E04002A74C4B06E492277D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_286441C9B12843A2BA6E8DB375D40A44 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C854B3E8124B46ED84CC57AA1513CBCE }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4C543C976C9C44EEA4F0979C551BEA28 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0E6DE75503E44A8C80EE4207CAAD8814 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_9E5E15EF83334A19906027E22F9CAF35 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'MusicRecommendationSystem'
+          app-name: 'TrackTune'
           slot-name: 'Production'
           
