@@ -8,7 +8,7 @@ Please visit the following link for presentation deck:
 
 ## Azure Web Services
 We have utilized Microsoft's Azure Web services to host our project. This streamlined the workload by making it easier for the changes to be deployed while the code is being experimented upon. You can visit the following link to get to the Track Tune app:
-https://tracktune.azurewebsites.net/ 
+https://track-tune.streamlit.app/ 
 
 ## Problem Statement
 Music lovers often struggle to discover new songs with similar vibes to their favorites. Traditional music streaming services might not provide detailed genre breakdowns or personalized recommendations that capture the essence of a particular song.
