@@ -6,8 +6,8 @@ Please visit the following link for presentation deck:
 **Shortened link** https://bit.ly/3Vghw5Q
 
 
-## Azure Web Services
-We have utilized Microsoft's Azure Web services to host our project. This streamlined the workload by making it easier for the changes to be deployed while the code is being experimented upon. You can visit the following link to get to the Track Tune app:
+## Deployed Web App
+You can visit the following link to get to the Track Tune app:
 https://track-tune.streamlit.app/ 
 
 ## Problem Statement
